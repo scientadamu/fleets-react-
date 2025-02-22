@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #f8f9fa;
+    /* background: red; */
+    border-bottom: 2px solid #ddd;
+    position: fixed;
+    width: calc(94% - 250px); /* Adjust based on sidebar width */
+    left: 290px;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Left section - Page Title */
+.header-left h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.header-left small {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Profile Section */
+.profile-menu {
+    font-weight: 600;
+    font-size: 16px;
+    background: #ffcc00;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #000;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        left: 0;
+        padding: 10px;
+    }
+    
+    .profile-menu {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .header-left h1 {
+        font-size: 18px;
+    }
+}
