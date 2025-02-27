@@ -1,6 +1,7 @@
 import React from "react";
 import AddFleet from "./AddFleet";
 import FleetList from "./FleetList";
+import DashboardContents from "./DashboardContents";
 import "./MainContent.css";
 
 const MainContent = ({ selectedMenu }) => {
@@ -15,7 +16,9 @@ const MainContent = ({ selectedMenu }) => {
             case "Expense History":
                 return <div className="content-container"><h2>Expense History</h2><p>Track expenses for fleets.</p></div>;
             default:
-                return <div className="content-container"><h2>Dashboard</h2><p>Welcome to the dashboard.</p></div>;
+                return <div className="content-container">
+                    return <DashboardContents />;
+                  </div>;
         }
     };
 
