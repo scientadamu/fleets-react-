@@ -50,7 +50,66 @@ const DashboardContents = () => {
 
                <div className="upcoming"></div>
             </div>
-            <div className="fleetSummary">Row2</div>
+            <div className="fleetSummary">
+            <div className="transaction-summary">
+      {/* Service Reminders */}
+      <div className="service-reminder">
+        <div className="progress-circle">
+          <span className="percentage">64%</span>
+        </div>
+        <div className="reminder-details">
+          <h3>Service Reminders</h3>
+          <p><span className="overdue">5</span> Overdue</p>
+          <p><span className="due-soon">8</span> Due Soon</p>
+        </div>
+        <button className="details-btn">View Details</button>
+      </div>
+
+      {/* Total Balance */}
+      <div className="total-balance">
+        <h3>Total Balance</h3>
+        <h1>240,399</h1>
+        <p>All Accounts</p>
+        <div className="card-info">
+          <div className="card-type">
+            <p>Account Type</p>
+            <h4>Debit Card</h4>
+            <p>**** **** **** 2598</p>
+          </div>
+          <div className="card-balance">
+            <h4>$25000</h4>
+            <span className="arrow">↗</span>
+          </div>
+        </div>
+        <div className="pagination">
+          <span>◀ Previous</span>
+          <span className="dot active"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
+          <span>Next ▶</span>
+        </div>
+      </div>
+
+      {/* Goals */}
+      <div className="goals">
+        <div className="goal-header">
+          <h3>Goals</h3>
+          <h1>₦20,000</h1>
+          <p>May, 2023</p>
+        </div>
+        <div className="goal-details">
+          <p> Target Achieved: <strong>₦12,500</strong></p>
+          <p> This Month Target: <strong>₦20,000</strong></p>
+        </div>
+        <div className="progress-meter">
+          <div className="gauge">
+            <span className="gauge-needle"></span>
+          </div>
+          <p>Target vs Achievement</p>
+        </div>
+      </div>
+    </div>
+            </div>
         </div>
     );
 };
