@@ -10,6 +10,7 @@
 }
 .fleetAnalysis{
     display: flex;
+    justify-content: space-between;
     /* background: rgb(239, 15, 15); */
     height: 300px;
     /* border: 2px solid red; */
@@ -163,16 +164,18 @@ svg {
     gap: 15px;
     justify-content: space-between;
     background: white;
+    /* background: red; */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    height: 150px; /* Set max height */
+    height: 200px; /* Set max height */
     overflow: hidden;
     align-items: center;
   }
   
   .service-reminder {
     background: #ffc107;
+    background: red;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -220,6 +223,7 @@ svg {
   
   .total-balance {
     background: #f5f5f5;
+    /* background: red; */
     padding: 15px;
     border-radius: 10px;
     flex: 1;
@@ -247,6 +251,7 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
   }
   
   .arrow {
@@ -342,7 +347,7 @@ margin: 0;
   hr{
     font-weight: 200px;
     font-size: 20px;
-    width: 70%;
+    width: 60%;
     margin: 0;
     padding: 0;
   }
@@ -351,7 +356,7 @@ margin: 0;
     align-items: center;
     gap: 5px;
     height: 50px;
-    width: 70%;
+    width: 60%;
     background: #FFCC30;
     margin: 0;
     padding: 0 0 0 10px;
@@ -393,8 +398,7 @@ margin: 0;
 .total-balance>.amount>#amounts{
 margin: 0;
 padding: 0;
-/* background: red;
-color: #00c853; */
+
 }
 .totalBalanceImg{
     width: 100%;
@@ -406,28 +410,26 @@ color: #00c853; */
 .serviceReminder {
     position: relative;
     background: #ffc107;
-    /* padding: 20px; */
+    padding: 20px 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 200px;
-    /* height: 300px; */
     margin: 0;
-    padding: 0;
   }
   
    /* Circular Progress */
   .serviceReminder>.progress-circle {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin: 0 auto 5px;
   } 
   
-  /* .circular-chart {
+  .circular-chart {
     width: 100%;
     height: 100%;
-  } */
+  }
   
   .circle-bg {
     fill: none;
