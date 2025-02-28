@@ -184,16 +184,7 @@ svg {
     justify-content: space-between;
   }
   
-  /* .progress-circle {
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  } */
+  
   
   .percentage {
     font-size: 16px;
@@ -203,6 +194,7 @@ svg {
   .reminder-details p {
     font-size: 12px;
     margin: 3px 0;
+    padding: 0;
   }
   
   .overdue {
@@ -218,11 +210,12 @@ svg {
   .details-btn {
     background: black;
     color: white;
-    padding: 6px 10px;
+    padding: 5px 20px 20px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 12px;
+    height: 50px;
   }
   
   .total-balance {
@@ -377,3 +370,133 @@ text-align: center;
 .maintainer{
     font-size: 14px;
 }
+.totalBalance{
+    font-family: Inter;
+    font-weight: bold;
+/* font-weight: 400; */
+/* font-size: 18px; */
+letter-spacing: 0%;
+padding: 0;
+margin: 0;
+}
+.total-balance>.amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+    font-weight:bolder;
+    /* font-size: 30px; */
+    padding: 0;
+    margin: 0;
+    
+}
+.total-balance>.amount>#amounts{
+margin: 0;
+padding: 0;
+/* background: red;
+color: #00c853; */
+}
+.totalBalanceImg{
+    width: 100%;
+    max-width: 300px;
+    height: 80px;
+    margin: 10px 0 0 0;
+}
+
+.serviceReminder {
+    position: relative;
+    background: #ffc107;
+    /* padding: 20px; */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    /* height: 300px; */
+    margin: 0;
+    padding: 0;
+  }
+  
+   /* Circular Progress */
+  .serviceReminder>.progress-circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 5px;
+  } 
+  
+  /* .circular-chart {
+    width: 100%;
+    height: 100%;
+  } */
+  
+  .circle-bg {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+  }
+  
+  .progress-circular-chart {
+    fill: none;
+    stroke: black;
+    stroke-width: 3;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Reminder Text */
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  /* Overdue & Due Soon */
+  .reminder-details p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overdue {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .due-soon {
+    color: orange;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Button */
+  .details-btn {
+    background: white;
+    color: black;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0px;
+  }
+  
+  .details-btn:hover {
+    background: #f5f5f5;
+  }
+  

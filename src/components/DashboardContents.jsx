@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./DashboardContents.css";
 import dsocIcon from "../images/docIcon.png";
 import driverImg from "../images/driverImg.png";
+import totalBalance from "../images/totalBalance.PNG";
 const DashboardContents = () => {
     
     return (
@@ -68,44 +69,51 @@ const DashboardContents = () => {
 
                <div className="upcoming"></div>
             </div>
+            
             <div className="fleetSummary">
             <div className="transaction-summary">
       {/* Service Reminders */}
-      <div className="service-reminder">
-        <div className="progress-circle">
-          <span className="percentage">64%</span>
-        </div>
-        <div className="reminder-details">
-          <h3>Service Reminders</h3>
-          <p><span className="overdue">5</span> Overdue</p>
-          <p><span className="due-soon">8</span> Due Soon</p>
-        </div>
-        <button className="details-btn">View Details</button>
+      <div className="serviceReminder">
+      {/* Circular Progress */}
+      <div className="progress-circle">
+        <svg viewBox="0 0 36 36" className="progress-circular-chart">
+          <path
+            className="circle-bg"
+            d="M18 2.0845
+               a 15.9155 15.9155 0 0 1 0 31.831
+               a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path
+            className="circle"
+            strokeDasharray="64, 100"
+            d="M18 2.0845
+               a 15.9155 15.9155 0 0 1 0 31.831
+               a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+        </svg>
+        <span className="percentage">64%</span>
       </div>
+
+      {/* Service Reminder Text */}
+      <h3>Service Reminders</h3>
+
+      {/* Overdue & Due Soon */}
+      <div className="reminder-details">
+        <p><span className="overdue">5</span> Overdue</p>
+        <p><span className="due-soon">8</span> Due Soon</p>
+      </div>
+
+      {/* Button */}
+      <button className="details-btn">View Details</button>
+    </div>
 
       {/* Total Balance */}
       <div className="total-balance">
-        <h3>Total Balance</h3>
-        <h1>240,399</h1>
-        <p>All Accounts</p>
-        <div className="card-info">
-          <div className="card-type">
-            <p>Account Type</p>
-            <h4>Debit Card</h4>
-            <p>**** **** **** 2598</p>
-          </div>
-          <div className="card-balance">
-            <h4>$25000</h4>
-            <span className="arrow">↗</span>
-          </div>
+        <h2 className="totalBalance">Total Balance</h2  >
+        <div className="amount">
+        <h2 id="amounts">#240,399</h2>
+        <span>All Accounts</span>
         </div>
-        <div className="pagination">
-          <span>◀ Previous</span>
-          <span className="dot active"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span>Next ▶</span>
-        </div>
+        <img className="totalBalanceImg" src={totalBalance} alt="docIcon" />
       </div>
 
       {/* Goals */}
