@@ -67,7 +67,7 @@ opacity: 50%;
 }
 /* .fleetsTransactions */
 
-.transaction-card {
+.transaction-card, .upcoming-card {
     display: flex;
     flex-direction: column;
     background: white;
@@ -327,4 +327,53 @@ svg {
     transform: rotate(45deg);
     transform-origin: bottom;
   }
-  
+  .allMaintenace{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 200px;
+  }
+  .maintenace>.time, .maintenace>.timeStart {
+    font-family: Inter;
+    display: flex;
+    flex-direction: row;
+font-size: 14px;
+letter-spacing: 0%;
+align-items: center;
+justify-content: space-between;
+margin: 0;
+    padding: 0;
+  }
+  hr{
+    font-weight: 200px;
+    font-size: 20px;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+  }
+  .maintainerBox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 50px;
+    width: 70%;
+    background: #FFCC30;
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+  .maitainaceSmallCircle{
+    width: 27px;
+    height: 27px;
+    border-radius: 25px;
+    background: white;
+  }
+  .mainainBy{
+    display: flex;
+flex-direction: column;
+text-align: center;
+}
+.maintainer{
+    font-size: 14px;
+}

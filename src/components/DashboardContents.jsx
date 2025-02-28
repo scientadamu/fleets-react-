@@ -46,6 +46,24 @@ const DashboardContents = () => {
       </div>
     </div>
             {/* tracsaction card */}
+            <div className="upcoming-card">
+                <h3>Upcomming Maintenance</h3>
+                <p>Today, <span id="todayDay">26 </span><span id="todayMonth">November</span></p>
+                <div className="allMaintenace">
+                    <div className="maintenace"><p className="timeStart" ><span id="timeStart">10:00 AM</span><hr/></p></div>            
+                    <div className="maintenace"><p className="timeStart" ><span id="time">10:00 AM</span><div className="maintainerBox">
+                        <div className="maitainaceSmallCircle"/>
+                        <p className="mainainBy">
+                            <span className="maintainer" id="maintainer">Aliyu Hassan</span>
+                            <span className="maintainer">maintainer</span>
+                        </p>
+                    </div>
+                    </p></div>            
+                    <div className="maintenace"><p className="timeStart" ><span id="timeEnd">10:40 AM</span><hr/></p></div>            
+            
+                 </div>            
+            </div>
+            {/* tracsaction card */}
                
 
                <div className="upcoming"></div>
