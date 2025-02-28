@@ -51,3 +51,57 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+.main-content {
+    padding: 20px;
+    background: #f5f5f5;
+    min-height: 100vh;
+    margin-left: 280px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Title & Description */
+.main-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Cards */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
